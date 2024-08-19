@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <div id="container">
+    <input id="display" readonly>
+     <button class="extra" value="clear" onclick="Clear()">AC</button>
+     <button class="extra" value="sign" onclick="AppendToDisplay('-')">+/-</button>
+     <button class="extra" value="percent" onclick="AppendToDisplay('%')">%</button>
+     <button class="operand" value="divide" onclick="AppendToDisplay('/')">/</button>
+     <button class="num" value="1" onclick="AppendToDisplay('1')">1</button>
+     <button class="num" value="2" onclick="AppendToDisplay('2')">2</button>
+     <button class="num" value="3" onclick="AppendToDisplay('3')">3</button>
+     <button class="operand" value="multiply" onclick="AppendToDisplay('*')">*</button>
+     <button class="num" value="4" onclick="AppendToDisplay('4')">4</button>
+     <button class="num" value="5" onclick="AppendToDisplay('5')">5</button>
+     <button class="num" value="6" onclick="AppendToDisplay('6')">6</button>
+     <button class="operand" value="subtract" onclick="AppendToDisplay('-')">-</button>
+     <button class="num" value="7" onclick="AppendToDisplay('7')">7</button>
+     <button class="num" value="8" onclick="AppendToDisplay('8')">8</button>
+     <button class="num" value="9" onclick="AppendToDisplay('9')">9</button>
+     <button class="operand" value="add" onclick="AppendToDisplay('+')">+</button>
+     <button class="num" value="0" id="zero"onclick="AppendToDisplay('0')">0</button>
+     <button class="num" value="." onclick="AppendToDisplay('.')">.</button>
+     <button class="operand" value="equal" onclick="Calculate()">=</button>
+   </div>
+   <script src="script.js" ></script> 
+</body>
+</html>
